@@ -10,9 +10,10 @@
 </head>
 <body>
 	<header id="main_navigation" class="clearfix">
-		<a href="#" class="name">Derevianko Liubov</a>
+		<%= link_to "Derevianko Liubov", root_path, class: "name" %>
+
 		<nav>
-		<%= link_to "Articles", posts_path %>
+			<%= link_to "Articles", posts_path %>
 			
 			<a href="#">Projects</a>
 			<a href="#">Contacts</a>
@@ -20,6 +21,15 @@
 	</header>
 
 	<%= yield %>
+
+	<footer id="main_footer">
+		<p class="copyright">&copy; 2015 Derevianko Liubov </p>
+		<nav>
+			<a href="https://vk.com/fokusnica" target="_blank"><i class="fa fa-vk"></i></a>
+			<a href="https://github.com/Fokusnica" target="_blank"><i class="fa fa-github"></i></a>
+			<a href="https://ua.linkedin.com/in/liubov-derevianko-3b9b39b3" target="_blank"><i class="fa fa-linkedin"></i></a>
+		</nav>
+	</footer>
 
 </body>
 </html>
