@@ -12,9 +12,9 @@
 			text-transform: uppercase;
 			a {
 				text-decoration: none;
-				color: #424652;
+				color: $dark;
 				&:hover {
-					color: #424652;
+					color: $highlight;
 				}
 			}
 		}
@@ -32,7 +32,7 @@
 		text-align: center;
 		.date {
 			font-size: .9em;
-			color: #9a9da4; 
+			color: $light; 
 			margin: 0;
 		}
 		h1 {
@@ -51,14 +51,14 @@
 		margin: 0;
 		font-weight: 700;
 		text-transform: uppercase;
-		color: #424652;
+		color: $dark;
 		font-size: .8em;
 	}
 	i {
-		color: #424652;
+		color: $dark;
 		padding: 1em 1.5em;
 		&:hover {
-			color: #8bc6db;
+			color: $highlight;
 			cursor: pointer;
 		}
 
@@ -87,25 +87,25 @@
 		border-radius: .15em;
 		line-height: 20px;
 		text-decoration: none;
-		background: #FFFFFF;
+		background: $white;
 		font-weight: 700;
 		font-size: .7em;
 		font-style: normal;
-		color: #424652;
+		color: $dark;
 		&:hover {
-			background: #424652;
-			color: #FFFFFF;
+			background: $highlight;
+			color: $white;
 		}
 	}
 	.current {
-		background: #424652;
-		color: #FFFFFF;
+		background: $highlight;
+		color: $white;
 	}
 	.disabled {
 		color: #C0C0C0;
 		&:hover {
 			color: #C0C0C0;
-			background: #FFFFFF;
+			background: $white;
 		}
 	}
 }
