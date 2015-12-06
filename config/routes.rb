@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   resources :posts
   resources :projects
-  get 'welocome/index'
+  resources :contacts, only: [:new, :create]
+  get 'welcome/index'
   root 'welcome#index'
 end
